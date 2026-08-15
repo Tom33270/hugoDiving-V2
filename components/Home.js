@@ -180,6 +180,11 @@ return (
   </a>
         </div>
       </div>
+
+      <div className={styles.scrollIndicator}>
+        <span className={styles.scrollText}>Scroll pour découvrir</span>
+        <span className={styles.scrollArrow}>↓</span>
+      </div>
     </header>
 
     {/* MAIN CONTENT */}

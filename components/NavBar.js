@@ -1,6 +1,6 @@
 import styles from '../styles/NavBar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFish, faMailBulk, faPhotoFilm, faWater } from '@fortawesome/free-solid-svg-icons';
+import { faFish, faMailBulk, faPhotoFilm, faWater, faHouse } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect, useRef } from 'react';
 import Modal from 'react-modal';
 import { useRouter } from 'next/router';
@@ -25,6 +25,7 @@ export default function NavBar() {
   const photos = <FontAwesomeIcon icon={faPhotoFilm} />;
   const contact = <FontAwesomeIcon icon={faMailBulk} />;
   const wiki = <FontAwesomeIcon icon={faFish} />;
+  const home = <FontAwesomeIcon icon={faHouse} />;
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -114,10 +115,10 @@ export default function NavBar() {
   return (
     <>
       <div className={`${styles.btntete} ${scrolled ? styles.scrolled : ""}`}>
-        <span className={styles.logo}>
-          <img src="/image/transparent-logo.png" alt="" className={styles.logoImg} />
-          Hug'O₂ Diving
-        </span>
+       <button className={styles.logo} onClick={() => navigate("/")}>
+  <img src="/image/transparent-logo.png" alt="" className={styles.logoImg} />
+  Hug'O₂ Diving
+</button>
 
         <div className={styles.navMenu} ref={menuRef}>
           <button
@@ -134,6 +135,9 @@ export default function NavBar() {
           </button>
 
           <div className={`${styles.dropdown} ${menuOpen ? styles.dropdownOpen : ""}`}>
+            <button className={styles.dropdownItem} onClick={() => closeAndGo("/")}>
+  {home} Page d'accueil
+</button>
             <button
               className={styles.dropdownItem}
               onClick={() => setActivitesOpen((o) => !o)}

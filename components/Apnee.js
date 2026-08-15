@@ -32,7 +32,12 @@ function Apnee(){
 
     <section className={styles.header}>
          <h1 className={styles.title}>Apnée</h1>
-         <button onClick={() => router.push("/")}>Retour à l'accueil</button>
+         
+
+      <div className={styles.scrollIndicator}>
+        <span className={styles.scrollText}>Scroll pour découvrir</span>
+        <span className={styles.scrollArrow}>↓</span>
+      </div>
     </section>
 
     <section className={styles.main}>
