@@ -1,0 +1,29 @@
+:root {
+  /* Direction "Immersion" — bleu profond cinématique */
+  --ink: #03080d;
+  --ink-2: #0a1826;
+  --ink-3: #0e2334;
+  --line: #1c2c3a;
+  --gold: #3ba6de;
+  --gold-soft: #79c7ee;
+  --cream: #eaf3fa;
+  --muted: #8ba3b5;
+  --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--ink);
+  font-family: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}

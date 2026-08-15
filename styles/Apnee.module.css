@@ -1,0 +1,329 @@
+/* Global container */
+.global {
+  min-height: 100vh;
+  background: var(--ink);
+}
+
+/* Header section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(180deg, rgba(3,8,13,0.35) 0%, rgba(3,8,13,0.55) 60%, rgba(3,8,13,0.92) 100%),
+    url('/image/apnee.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  color: var(--cream);
+}
+
+.header .title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 52px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.header button {
+  position: relative;
+  z-index: 1;
+  padding: 13px 28px;
+  border-radius: 2px;
+  border: 1px solid rgba(234,243,250,0.35);
+  background: transparent;
+  color: var(--cream);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.header button:hover {
+  border-color: var(--gold);
+  color: var(--gold-soft);
+  background: rgba(234,243,250,0.05);
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: rgba(4,10,16,0.85);
+  color: var(--gold-soft);
+  font-size: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.scrollTop:hover {
+  transform: translateY(-4px);
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* Main section */
+.main {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Common section styles */
+.intro,
+.expertise,
+.sites {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.intro h2,
+.expertise h2,
+.sites h2,
+.benefits h2,
+.program h2,
+.infos h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+
+.intro p,
+.expertise p,
+.sites p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: auto;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+/* Benefits section */
+.benefits {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  margin: 40px auto 0 auto;
+}
+
+.benefitsGrid div {
+  background: var(--ink-2);
+  padding: 32px;
+  transition: background 0.25s ease;
+}
+
+.benefitsGrid div:hover {
+  background: var(--ink-3);
+}
+
+.footer {
+  color: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.benefitsGrid h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.benefitsGrid p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* Program section */
+.program {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.programContent {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+}
+
+.programContent h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.programContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.programContent ul li {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 2;
+  padding-left: 22px;
+  position: relative;
+}
+
+.programContent ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sessions {
+  background: rgba(59,166,222,0.06);
+  border: 1px solid var(--line);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sessions h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.sessions p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Infos section */
+.infos {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.infosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  max-width: 820px;
+  margin: 40px auto 0 auto;
+}
+
+.infosGrid div {
+  background: var(--ink-2);
+  padding: 28px;
+  text-align: center;
+}
+
+.infosGrid h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.infosGrid p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* CTA section */
+.cta {
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--gold);
+}
+
+.cta h2 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.cta p {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.cta button {
+  padding: 16px 36px;
+  border-radius: 2px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold-soft);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.cta button:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .benefitsGrid,
+  .infosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .header .title {
+    font-size: 34px;
+    letter-spacing: 0.01em;
+  }
+
+  .intro h2,
+  .benefits h2,
+  .program h2,
+  .infos h2 {
+    font-size: 28px;
+  }
+}

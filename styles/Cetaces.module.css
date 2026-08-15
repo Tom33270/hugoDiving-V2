@@ -1,0 +1,500 @@
+/* Global container */
+.global {
+  min-height: 100vh;
+  background: var(--ink);
+}
+
+/* Header section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(180deg, rgba(3,8,13,0.35) 0%, rgba(3,8,13,0.55) 60%, rgba(3,8,13,0.92) 100%),
+    url('/image/cetaces.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  color: var(--cream);
+}
+
+.header .title {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 48px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.header button {
+  position: relative;
+  z-index: 1;
+  padding: 13px 28px;
+  border-radius: 2px;
+  border: 1px solid rgba(234,243,250,0.35);
+  background: transparent;
+  color: var(--cream);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.header button:hover {
+  border-color: var(--gold);
+  color: var(--gold-soft);
+  background: rgba(234,243,250,0.05);
+}
+
+/* Main section */
+.main {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Intro and conservation */
+.intro,
+.conservation {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.intro h2,
+.seasons h2,
+.species h2,
+.observation h2,
+.why h2,
+.tips h2,
+.conservation h2,
+.infos h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+
+.intro p,
+.conservation p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: auto;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.experience {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.experience h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--cream);
+}
+.experience p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 760px;
+  margin: auto;
+  font-weight: 300;
+}
+
+/* Seasons section */
+.seasons {
+  margin-bottom: 90px;
+  text-align: center;
+}
+.season {
+  color: var(--muted);
+}
+.important {
+  color: var(--muted);
+}
+.activity {
+  margin-bottom: 90px;
+  text-align: center;
+}
+.activity h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--cream);
+}
+.step h3, .step p {
+  color: var(--muted);
+}
+.footer {
+  color: var(--cream);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: rgba(4,10,16,0.85);
+  color: var(--gold-soft);
+  font-size: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.scrollTop:hover {
+  transform: translateY(-4px);
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.seasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.seasonCard {
+  background: var(--ink-2);
+  padding: 38px;
+  transition: background 0.25s ease;
+}
+
+.seasonCard:hover {
+  background: var(--ink-3);
+}
+
+.seasonCard h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.period {
+  color: var(--gold-soft);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.seasonCard p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Species section */
+.species {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.speciesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+}
+
+.speciesGrid div {
+  background: var(--ink-2);
+  padding: 32px;
+}
+
+.speciesGrid h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.speciesGrid p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* Observation section */
+.observation {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.observationContent {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: left;
+}
+
+.observationContent h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.observationContent ol {
+  padding-left: 22px;
+  margin: 0 0 30px 0;
+}
+
+.observationContent ol li {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+.observationContent ol li strong {
+  color: var(--gold-soft);
+}
+
+.charter {
+  background: rgba(59,166,222,0.06);
+  border: 1px solid var(--line);
+  padding: 25px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.charter h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.charter p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+/* Why section */
+.why {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+}
+
+.whyGrid div {
+  background: var(--ink-2);
+  padding: 32px;
+}
+
+.whyGrid h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.whyGrid p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* Tips section */
+.tips {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.tipsContent {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  padding: 40px;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: left;
+}
+
+.tipsContent h3 {
+  color: var(--gold-soft);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+.tipsContent h3:first-child {
+  margin-top: 0;
+}
+
+.tipsContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.tipsContent ul li {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 2;
+  padding-left: 22px;
+  position: relative;
+}
+
+.tipsContent ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Conservation section */
+.conservation {
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  padding: 40px;
+  margin-bottom: 90px;
+}
+
+/* Infos section */
+.infos {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.infosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  max-width: 820px;
+  margin: 40px auto 0 auto;
+}
+
+.infosGrid div {
+  background: var(--ink-2);
+  padding: 28px;
+  text-align: center;
+}
+
+.infosGrid h3 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.infosGrid p {
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+/* CTA section */
+.cta {
+  text-align: center;
+  padding: 60px 40px;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--gold);
+}
+
+.cta h2 {
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.cta p {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.cta button {
+  padding: 16px 36px;
+  border-radius: 2px;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold-soft);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.cta button:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .seasonsGrid,
+  .speciesGrid,
+  .whyGrid,
+  .infosGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .header .title {
+    font-size: 30px;
+    letter-spacing: 0.01em;
+  }
+
+  .intro h2,
+  .seasons h2,
+  .species h2,
+  .observation h2,
+  .why h2,
+  .tips h2,
+  .conservation h2,
+  .infos h2 {
+    font-size: 28px;
+  }
+}
