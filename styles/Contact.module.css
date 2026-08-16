@@ -28,7 +28,7 @@
     linear-gradient(180deg, rgba(3,8,13,0.4) 0%, rgba(3,8,13,0.6) 60%, rgba(3,8,13,0.92) 100%),
     url('/image/surface.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
   height: 40vh;
   position: relative;
   color: var(--cream);
@@ -263,8 +263,7 @@
   border: 1px solid var(--line);
   border-radius: 2px;
   max-width: 650px;
-  margin: 40px auto 60px auto;
-  z-index: 999;
+  margin: 10% auto 60px auto;
   align-items: center;
   text-align: left;
   display: flex;

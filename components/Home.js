@@ -272,14 +272,14 @@ return (
         <ul className={styles.priceList}>
           <li><span>Randonnée Palmée</span><strong>55 euros</strong></li>
           <li><span>Baptême</span><strong>85 euros</strong></li>
-          <li><span>Initiation</span><strong>110 euros</strong></li>
+          <li><span>Initiation</span><strong>120 euros</strong></li>
           <li><span>Pack découverte</span><strong>180 euros</strong></li>
           <li><span>Exploration</span><strong>65 euros</strong></li>
           <li><span>Réadaptation</span><strong>80 euros</strong></li>
           <li><span>Pack 3 plongées</span><strong>185 euros</strong></li>
           <li><span>Pack 6 plongées</span><strong>350 euros</strong></li>
           <li><span>Pack 10 plongées</span><strong>550 euros</strong></li>
-          <li><span>Niveau 1 / Open water SDI</span><strong>490 euros</strong></li>
+          <li><span>Niveau 1 / Open water SDI</span><strong>450 euros</strong></li>
           <li><span>Nitrox simple</span><strong>180 euros</strong></li>
           <li><span>Nitrox confirmé</span><strong>310 euros</strong></li>
           <li><span>Formations N2, N3...</span><strong>Sur devis</strong></li>

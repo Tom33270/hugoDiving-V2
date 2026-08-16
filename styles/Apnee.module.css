@@ -14,7 +14,7 @@
     linear-gradient(180deg, rgba(3,8,13,0.35) 0%, rgba(3,8,13,0.55) 60%, rgba(3,8,13,0.92) 100%),
     url('/image/apnee.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center 32%;
   height: 70vh;
   position: relative;
   color: var(--cream);

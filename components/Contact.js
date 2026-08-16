@@ -5,7 +5,7 @@ import Head from "next/head";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faMailBulk, faPhone} from '@fortawesome/free-solid-svg-icons';
-
+import NavBar from "./NavBar";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "", number: "", });
@@ -38,13 +38,11 @@ export default function Contact() {
   <meta name="description" content="Réservez votre plongée, sortie cétacés ou initiation apnée à Saint‑Gilles. Contactez Hug’O₂ Diving : email, Instagram, localisation et horaires." />
   <link rel="canonical" href="https://hugodiving.com/contact" />
 </Head>
-
+<NavBar alwaysSolid />
     <div className={styles.global}>
 
 
-      <section className={styles.header}>
-         <h1 className={styles.title}>Contact</h1>
-    </section>
+    
       <section className={styles.main}>
         <div className={styles.contactInfo}>
   <img className={styles.imageProfil} src="/image/photoProfil.jpeg" alt="Photo de moi"></img>

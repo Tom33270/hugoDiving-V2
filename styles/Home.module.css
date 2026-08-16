@@ -119,8 +119,8 @@
 }
 
 .heroCtaPrimary {
-  background: rgba(59, 166, 222, 0.25);
-  color: var(--ink);
+  background: rgba(59, 166, 222, 0.6);
+  color: rgba(255,255,255,1);
   border: none;
   padding: 16px 32px;
   border-radius: 7px;
@@ -136,6 +136,7 @@
 .heroCtaPrimary:hover {
   background: var(--gold-soft);
   transform: translateY(-3px);
+  
   box-shadow: 0 12px 30px rgba(59,166,222,0.3);
 }
 
@@ -203,11 +204,11 @@
   align-items: center;
   gap: 9px;
    background: linear-gradient(45deg,
-    rgba(240, 148, 51, 0.25),
-    rgba(230, 104, 60, 0.25),
-    rgba(220, 39, 67, 0.25),
-    rgba(204, 35, 102, 0.25),
-    rgba(188, 24, 136, 0.25));;
+    rgba(240, 148, 51, 0.6),
+    rgba(230, 104, 60, 0.3),
+    rgba(220, 39, 67, 0.4),
+    rgba(204, 35, 102, 0.5),
+    rgba(188, 24, 136, 0.6));;
   color: #fff;
   border: none;
   padding: 16px 32px;
@@ -237,7 +238,7 @@
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  background: rgba(37, 211, 102, 0.2);
+  background: rgba(37, 211, 102, 0.6);
   color: #fff;
   border: none;
   padding: 16px 32px;
@@ -642,6 +643,8 @@
   width: 100%;
   padding-bottom: 40px;
 }
+
+
 
 .kicker {
   display: inline-block;

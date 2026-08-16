@@ -10,13 +10,13 @@ import dynamic from 'next/dynamic';
 
 dynamic(() => import('leaflet'), { ssr: false });
 
-export default function NavBar() {
+export default function NavBar({ alwaysSolid = false }) {
   const router = useRouter();
 
   const [openMap, setOpenMap] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activitesOpen, setActivitesOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(alwaysSolid);
 
   const mapRef = useRef(null);
   const menuRef = useRef(null);
@@ -28,10 +28,11 @@ export default function NavBar() {
   const home = <FontAwesomeIcon icon={faHouse} />;
 
   useEffect(() => {
+    if (alwaysSolid) return;
     const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [alwaysSolid]);
 
   // Fermeture du menu déroulant (clic extérieur ou touche Échap)
   useEffect(() => {

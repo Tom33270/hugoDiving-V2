@@ -83,7 +83,7 @@ function Plongee(){
 
                 <div className={styles.formuleCard}>
                     <h3>Initiation</h3>
-                    <p className={styles.price}>110€ / personne</p>
+                    <p className={styles.price}>120€ / personne</p>
                     <ul>
                         <li>Durée : 45 minutes à 1 heure</li>
                         <li>2 à 4 personnes en même temps</li>
@@ -182,9 +182,9 @@ function Plongee(){
         </div>
 
         <div className={styles.cta}>
-            <h2>Prêt à plonger ?</h2>
+
            <br></br>
-            <button onClick={() => router.push("/contact")}>Réserver maintenant</button>
+            <button onClick={() => router.push("/contact")}>Prêt à plonger ?</button>
         </div>
     </section>
 </div>
