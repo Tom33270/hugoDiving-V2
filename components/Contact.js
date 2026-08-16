@@ -100,7 +100,6 @@ export default function Contact() {
         </form>
         
         </div>
-        <div> <button className={styles.btnHome} onClick={() => router.push("/")}>Retour à l'accueil</button></div>
         
       </section>
     </div>
